@@ -27,7 +27,7 @@ header nav div a{
     text-decoration: none;
     color: #333;
     font-size: 1.2rem;
-    font-weight: 500;
+    padding-right:5vh;
 }
 
 header nav div a:hover {
@@ -47,11 +47,22 @@ main section h2{
     text-align: center;
 }
 
-main section p{
+main section{
     padding:2vh;
     margin:auto;
     text-align: center;
     width: 70%;
+}
+
+#catalogueAccess button {
+    text-decoration: none;
+    border-radius: 1vh;
+    padding:1vh;
+    border-color: white;
+    background-color:#333;
+    color: white;
+    cursor: pointer;
+    align-self: center;
 }
 
 #catalogue{
@@ -120,6 +131,28 @@ main section p{
 }
 
 
+main div form{
+    box-shadow: 2px 5px 5px 5px rgba(0,0,0,0.1);
+    border-radius: 5px;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5vh auto;
+    width: 50%;
+}
+
+main div form p input{
+    width: 100%;
+}
+main div form button{
+    border-radius: 1vh;
+    padding:1vh;
+    border-color: white;
+    background-color:#333;
+    color: white;
+    cursor: pointer;
+    align-self: center;
+}
 
 footer{
     box-shadow: 2px -5px 5px 5px rgba(0,0,0,0.1);
