@@ -1,3 +1,10 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
 header{
     box-shadow: 2px 5px 5px 5px rgba(0,0,0,0.1);
     margin-bottom: 2vh;
@@ -27,35 +34,63 @@ header nav div a:hover {
     text-decoration: underline;
 }
 
+main {
+    flex: 1;
+}
+
 main h1{
     text-align: center;
     margin: 5vh auto;
 }
 
-main div{
+main section h2{
+    text-align: center;
+}
+
+main section p{
+    padding:2vh;
+    margin:auto;
+    text-align: center;
+    width: 70%;
+}
+
+#catalogue{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-}
-
-main div div{
-    width: 30%;
-    margin: 2vh auto;
-    padding: 2vh;
-    box-shadow: 2px 5px 5px 5px rgba(0,0,0,0.1);
-    border-radius: 5px;
-}
-
-footer{
-    box-shadow: 2px -5px 5px 5px rgba(0,0,0,0.1);
-    margin-top: 2vh;
-    position: absolute;
-    bottom: 0;
-    left: 0;
     width: 100%;
 }
 
+#catalogue div{
+    width: 30%;
+    margin: 2vh auto;
+    padding: 1vh;
+    box-shadow: 2px 5px 5px 5px rgba(0,0,0,0.1);
+    border-radius: 5px;    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#catalogue div button{
+    border-radius: 1vh;
+    padding:1vh;
+    border-color: white;
+    background-color:#333;
+    color: white;
+    cursor: pointer;
+}
+footer{
+    box-shadow: 2px -5px 5px 5px rgba(0,0,0,0.1);
+    margin-top: 2vh;
+    width: 100%;
+}
+
+
+
 footer p{
+
     margin: 5vh auto;
     text-align: center;
 }
@@ -65,4 +100,5 @@ footer div{
     display: flex;
     justify-content: space-around;
     margin: 0 auto;
+    padding-top : 5vh;
 }
