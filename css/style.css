@@ -1,0 +1,68 @@
+header{
+    box-shadow: 2px 5px 5px 5px rgba(0,0,0,0.1);
+    margin-bottom: 2vh;
+}
+
+header nav{
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+
+header nav div a{
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+header nav div a:hover {
+    text-decoration: underline;
+}
+
+main h1{
+    text-align: center;
+    margin: 5vh auto;
+}
+
+main div{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+main div div{
+    width: 30%;
+    margin: 2vh auto;
+    padding: 2vh;
+    box-shadow: 2px 5px 5px 5px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+footer{
+    box-shadow: 2px -5px 5px 5px rgba(0,0,0,0.1);
+    margin-top: 2vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+footer p{
+    margin: 5vh auto;
+    text-align: center;
+}
+
+footer div{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
