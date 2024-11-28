@@ -10,7 +10,11 @@ $router->setBasePath($basePath);
 
 // Routes
 $router->map('GET', '/', 'MainController#home', 'home');
-$router->map('GET', '/about', 'MainController#about', 'about');
+$router->map('GET', '/catalogue', 'MainController#catalogue', 'catalogue');
+$router->map('GET', '/login', 'MainController#login', 'login');
+$router->map('GET', '/register', 'MainController#register', 'register');
+$router->map('GET', '/panier', 'MainController#panier', 'panier');
+$router->map('GET', '/infos', 'MainController#infos', 'infos');
 
 // Retourne l'objet router
 return $router;
