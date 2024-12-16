@@ -42,6 +42,10 @@ $router->addRoutes(array(
         'controller' => CatalogController::class,
         'action' => 'product'
     ], 'catalog-product'),
+    array('GET','/cart', [
+        'controller' => CatalogController::class,
+        'action' => 'cart'
+    ], 'cart'),
     array('GET','/test', [
         'controller' => MainController::class,
         'action' => 'test'

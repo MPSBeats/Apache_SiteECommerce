@@ -10,14 +10,7 @@ use App\Models\Type;
 class MainController extends CoreController
 {
 
-    public function test()
-    {
-        $brandModel = new Brand(); // peut modifier Brand avec les autres nom de model pour tester
-        $list = $brandModel->findAll();
-        $elem = $brandModel->find(7);
-        dump($list);
-        dump($elem);
-    }
+
     /**
      * Affiche la page d'accueil du site
      */
@@ -27,7 +20,6 @@ class MainController extends CoreController
         $categoryModel = new Category();
         // Ensuite j'execute la fonction findAllForHomePage() du model Category
         $categories = $categoryModel->findAllForHomePage();
-        // dump($categories);
         $this->show('home', [
             'categories' => $categories
         ]);

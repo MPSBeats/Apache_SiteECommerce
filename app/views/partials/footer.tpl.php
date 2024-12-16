@@ -6,22 +6,22 @@
           <div class="col-lg-4 service-column">
             <i class="fa fa-truck"></i>
             <div class="service-text">
-              <h6 class="text-uppercase">Livraison et retour gratuit</h6>
-              <p class="text-muted font-weight-light text-sm mb-0">Livraison gratuite à partir de 100€</p>
+              <h6 class="text-uppercase">Livraison gratuite et retour payant</h6>
+              <p class="text-muted font-weight-light text-sm mb-0">Livraison gratuite à partir de Demain</p>
             </div>
           </div>
           <div class="col-lg-4 service-column">
             <i class="fa fa-money"></i>
             <div class="service-text">
-              <h6 class="text-uppercase">Satisfait ou remboursé</h6>
-              <p class="text-muted font-weight-light text-sm mb-0">30 jours pour renvoyer</p>
+              <h6 class="text-uppercase">Satisfait ou Tant pis pour toi</h6>
+              <p class="text-muted font-weight-light text-sm mb-0">12 heures pour renvoyer</p>
             </div>
           </div>
           <div class="col-lg-4 service-column">
             <i class="fa fa-phone"></i>
             <div class="service-text">
-              <h6 class="text-uppercase">01 02 03 04 05</h6>
-              <p class="text-muted font-weight-light text-sm mb-0">Joignable 24/7</p>
+              <h6 class="text-uppercase">06 06 06 06 06</h6>
+              <p class="text-muted font-weight-light text-sm mb-0">Joignable 1 jour sur 2</p>
             </div>
           </div>
         </div>
@@ -32,8 +32,8 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6 mb-5 mb-lg-0">
-            <div class="font-weight-bold text-uppercase text-lg text-dark mb-3">oShop</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            <div class="font-weight-bold text-uppercase text-lg text-dark mb-3">Ecomm</div>
+            <p> Vrai site hein</p>
             <ul class="list-inline">
               <li class="list-inline-item">
                 <a href="#" target="_blank" title="twitter" class="text-muted text-hover-primary">
@@ -68,8 +68,8 @@
             </ul>
           </div>
           <div class="col-lg-6">
-            <h6 class="text-uppercase text-dark mb-3">Recevez nos offres promotionnelles</h6>
-            <p class="mb-3"> Lorem ipsum dolor sit amet, at itaque temporibus.</p>
+            <h6 class="text-uppercase text-dark mb-3">Recevez toutes nos publicités</h6>
+            <p class="mb-3"> Mets un vrai mail pour qu'on te spam stp</p>
             <form action="#" id="newsletter-form">
               <div class="input-group mb-3">
                 <input type="email" placeholder="Votre adresse email" class="form-control bg-transparent border-secondary border-right-0">
@@ -87,7 +87,7 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-3 text-center text-md-left">
-            <p class="mb-md-0">Tous droits réservés<br>© 2020 oShop</p>
+            <p class="mb-md-0">Tous droits réservés<br>© 2024 Sacha Simon Ecomm</p>
           </div>
           <div class="col-md-6 text-center">
             <p class="mb-md-0"><a class="text-white" href="#">Mentions légales</a><br><a class="text-white" href="#">Conditions générales de vente</a></p>
