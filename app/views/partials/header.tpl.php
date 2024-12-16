@@ -31,11 +31,11 @@
 
     <nav class="navbar navbar-expand-lg navbar-sticky navbar-airy navbar-light">
       <div class="container-fluid">
-        <!-- Navbar Header  -->
+
         <a href="<?=$router->generate('home')?>" class="navbar-brand">Ecomm</a>
         <button type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
           aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
-        <!-- Navbar Collapse -->
+
         <div id="navbarCollapse" class="collapse navbar-collapse">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item">
@@ -46,7 +46,7 @@
                 <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Catégories</a>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                   <?php foreach($categories as $currentCategory): ?>
-                    <!-- <a class="dropdown-item" href="<?=$absoluteURL.'/catalogue/categorie/'.$currentCategory->getId()?>"><?=$currentCategory->getName()?></a> -->
+                    <?=$absoluteURL.'/catalogue/categorie/'.$currentCategory->getId()?>"><?=$currentCategory->getName()?></a> -->
                     <a class="dropdown-item" href="<?=$router->generate('catalog-category', ['id' => $currentCategory->getId()])?>"><?=$currentCategory->getName()?></a>
 
                   <?php endforeach ?>

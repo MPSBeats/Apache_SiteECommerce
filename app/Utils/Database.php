@@ -1,10 +1,5 @@
 <?php
 
-// Retenir son utilisation  => Database::getPDO()
-// Design Pattern : Singleton
-/**
- * Classe qui va nous permettre de nous connecter à notre base de données = oshop
- */
 namespace App\Utils;
 
 use PDO;
@@ -16,8 +11,6 @@ class Database
     private static $_instance;
     private function __construct()
     {
-        // Récupération des données du fichier de config
-        // la fonction parse_ini_file parse le fichier et retourne un array associatif
         $configData = parse_ini_file(__DIR__ . '/../config.ini');
 
         try {
@@ -36,10 +29,8 @@ class Database
             exit;
         }
     }
-    // the unique method you need to use
     public static function getPDO()
     {
-        // If no instance => create one
         if (empty(self::$_instance)) {
             self::$_instance = new Database();
         }

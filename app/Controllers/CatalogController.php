@@ -1,7 +1,6 @@
 <?php
 
-// On va imaginer qu'il y a un dossier App puis un dossier controller dedans et on va ranger cette classe (CatalogController) dedans
-namespace App\Controllers; // Maintenant jai rangé CatalogController dans le dossier imaginaire App\Controllers
+namespace App\Controllers;
 
 use App\Models\Brand;
 use App\Models\Category;
@@ -16,20 +15,13 @@ class CatalogController extends CoreController
      */
     public function category($params)
     {
-        // je vais récupérer tous les produit qui ont pour id_category, l'id de la category courante
-        // dump($params);
-        // ci dessous je stock dans $id_category la valeur de l'id de la categorie
-        $id_category = $params['id'];
 
+        $id_category = $params['id'];
         $categoryModel = new Category;
         $category = $categoryModel->find($id_category);
 
-        // Je veux récupérer les produits qui ont pour category_id l'id de la category (ici $id_category)
-        // Pour ce faire, je vais d'abord devoir créer une instance de la classe Product
         $productModel = new Product();
-        // Maintenant je peux executer la méthode findByCategory()
         $products = $productModel->findByCategory($id_category);
-        // Donc $products c'est TOUS les produits qui ont pour category_id => $id_category
 
         $this->show('category', [
             'categoryId' => $params['id'],
@@ -91,15 +83,10 @@ class CatalogController extends CoreController
      */
     public function product($params)
     {
-        // On va récupérer la liste de tous nos produits
-        // On va se servir de notre model Product
-        $productModel = new Product();
-        // On stock dans $product le produit que je veux afficher en fonction de son id
-        $product = $productModel->find($params['id']);
-        // find() prend un parametre id, et fait une requete SQL qui va chercher une élément en fonction de son id
 
-        // 1er param => la vue qu'on veut afficher
-        // 2eme param => les données qu'on veut envoyer a la vue
+        $productModel = new Product();
+        $product = $productModel->find($params['id']);
+
         $this->show('product', [
             'productId' => $params['id'],
             'product' => $product

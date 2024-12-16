@@ -3,14 +3,14 @@
 namespace App\Models;
 
 use App\Utils\Database;
-use PDO; // on utilise la classe PDO dont le namespace a été défini
+use PDO;
 
 class Category extends CoreModel
 {
     private $name;
     private $subtitle;
     private $picture;
-    private $home_order; // ordre d'affichage des catégories dans la page accueil
+    private $home_order;
 
     /**
      * Récupère toutes les catégories (table category) depuis la bdd
@@ -32,17 +32,12 @@ class Category extends CoreModel
      */
     public function find($id)
     {
-        // Ici on créer la requete SQL qui va récupérer le product en fonction de son id
         $sql = "SELECT * FROM category WHERE id = ".$id;
 
-        // Ici $pdo est un objet de la classe Databse (Utils/Database.php)
-        // $pdo va me permettre d'executer mes requetes sql
         $pdo = Database::getPDO();
 
-        // ici j'execute ma requete sql ($sql) et je stock le resultat de cette requete dans $pdoStatement
         $pdoStatement = $pdo->query($sql);
 
-        // Je veux récuperer UN objet Product, PDO le fait pour moi => fetchObject (fetch qu'une seule fois + converti en objet de la classe 'Product' donc le model Product)
         $category = $pdoStatement->fetchObject(Category::class);
 
         return $category;

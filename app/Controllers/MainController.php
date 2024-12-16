@@ -16,9 +16,7 @@ class MainController extends CoreController
      */
     public function home()
     {
-        // Ci dessous je créer une instance du model Category
         $categoryModel = new Category();
-        // Ensuite j'execute la fonction findAllForHomePage() du model Category
         $categories = $categoryModel->findAllForHomePage();
         $this->show('home', [
             'categories' => $categories
@@ -30,7 +28,6 @@ class MainController extends CoreController
      */
     public function legalMentions()
     {
-        // Affiche la vue dans le dossier views
         $this->show('mentions');
     }
 }

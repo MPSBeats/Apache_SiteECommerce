@@ -1,5 +1,4 @@
 <footer class="main-footer">
-    <!-- Services block-->
     <div id="footer-services" class="py-5">
       <div class="container">
         <div class="row">
@@ -27,7 +26,6 @@
         </div>
       </div>
     </div>
-    <!-- Main block - menus, subscribe form-->
     <div id="footer-menu" class="py-5">
       <div class="container">
         <div class="row">
@@ -82,7 +80,6 @@
         </div>
       </div>
     </div>
-    <!-- Copyright section of the footer-->
     <div id="footer-copyright" class="py-3">
       <div class="container">
         <div class="row align-items-center">
@@ -111,7 +108,7 @@
     </div>
   </footer>
 
-  <!-- JS -->
+
   <script src="<?=$absoluteURL?>/js/jquery.min.js"></script>
   <script src="<?=$absoluteURL?>/js/popper.min.js"></script>
   <script src="<?=$absoluteURL?>/js/bootstrap.min.js"></script>

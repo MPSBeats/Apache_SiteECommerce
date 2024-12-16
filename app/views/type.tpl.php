@@ -1,12 +1,10 @@
 
 <section class="hero">
     <div class="container">
-        <!-- Breadcrumbs -->
         <ol class="breadcrumb justify-content-center">
             <li class="breadcrumb-item"><a href="<?=$router->generate('home')?>">Home</a></li>
             <li class="breadcrumb-item active"><?=$viewData['type']->getName()?></li>
         </ol>
-        <!-- Hero Content-->
         <div class="hero-content pb-5 text-center">
             <h1 class="hero-heading"><?=$viewData['type']->getName()?></h1>
             <div class="row">
@@ -35,7 +33,6 @@
         </header>
         <div class="row">
             <?php 
-            // Vérifiez le contenu de $viewData['products']
             if (is_array($viewData['products']) && count($viewData['products']) > 0) : 
               for ($i = 0; $i < count($viewData['products']); $i++) : 
                   $product = $viewData['products'][$i];?>

@@ -34,7 +34,7 @@
       </header>
         <div class="row">
             <?php 
-            // Vérifiez le contenu de $viewData['products']
+
             if (is_array($viewData['products']) && count($viewData['products']) > 0) : 
                 for ($i = 0; $i < count($viewData['products']); $i++) : 
                     $product = $viewData['products'][$i];?>

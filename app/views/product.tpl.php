@@ -2,7 +2,7 @@
 <section class="products-grid">
     <div class="container-fluid">
       <div class="row">
-        <!-- product-->
+
         <div class="col-lg-6 col-sm-12">
           <div class="product-image">
             <img src="<?=$absoluteURL.'/'.$viewData['product']->getPicture()?>" alt="product" class="img-fluid">
@@ -31,7 +31,6 @@
             </p>
           </div>
         </div>
-        <!-- /product-->
       </div>
       
     </div>
