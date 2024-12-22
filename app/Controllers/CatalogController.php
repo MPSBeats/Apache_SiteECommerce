@@ -8,6 +8,7 @@ use App\Models\Product;
 use App\Models\Type;
 
 
+
 class CatalogController extends CoreController
 {
     /**
@@ -91,5 +92,12 @@ class CatalogController extends CoreController
             'productId' => $params['id'],
             'product' => $product
         ]);
+    }
+    /**
+     * Show the cart page
+     */
+    public function cart()
+    {
+        $this->show('cart');
     }
 }

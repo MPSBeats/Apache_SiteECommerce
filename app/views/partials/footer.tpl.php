@@ -93,13 +93,13 @@
           <div class="col-md-3">
             <ul class="list-inline mb-0 mt-2 mt-md-0 text-center text-md-right">
               <li class="list-inline-item">
-                <img src="assets/images/visa.svg" alt="..." class="payment-icon">
+                <img src="<?=$absoluteURL.'/'?>assets/images/visa.svg" alt="..." class="payment-icon">
               </li>
               <li class="list-inline-item">
-                <img src="assets/images/mastercard.svg" alt="..." class="payment-icon">
+                <img src="<?=$absoluteURL.'/'?>assets/images/mastercard.svg" alt="..." class="payment-icon">
               </li>
               <li class="list-inline-item">
-                <img src="assets/images/paypal.svg" alt="..." class="payment-icon">
+                <img src="<?=$absoluteURL.'/'?>assets/images/paypal.svg" alt="..." class="payment-icon">
               </li>
             </ul>
           </div>

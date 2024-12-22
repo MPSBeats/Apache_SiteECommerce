@@ -34,7 +34,7 @@ $router->addRoutes(array(
         'controller' => CatalogController::class,
         'action' => 'product'
     ], 'catalog-product'),
-    array('GET','/cart', [
+    array('GET','/catalogue/categorie/cart', [
         'controller' => CatalogController::class,
         'action' => 'cart'
     ], 'cart'),

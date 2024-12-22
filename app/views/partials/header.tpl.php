@@ -46,7 +46,6 @@
                 <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Catégories</a>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                   <?php foreach($categories as $currentCategory): ?>
-                    <?=$absoluteURL.'/catalogue/categorie/'.$currentCategory->getId()?>"><?=$currentCategory->getName()?></a> -->
                     <a class="dropdown-item" href="<?=$router->generate('catalog-category', ['id' => $currentCategory->getId()])?>"><?=$currentCategory->getName()?></a>
 
                   <?php endforeach ?>
